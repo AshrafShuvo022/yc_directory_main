@@ -7,9 +7,10 @@ import { SanityLive } from "@/sanity/lib/live";
 
 export default async function Home({searchParams}: {searchParams: Promise<{query?: string}>}) {
   const query = (await searchParams).query;
-   
+   const params = {search: query || null};
   
-  const{data:posts} = await sanityFetch({query: STARTUP_QUERY});
+  const{data:posts} = await sanityFetch({query: STARTUP_QUERY,params});
+
   return (
     <>
       <section className="pink_container">
