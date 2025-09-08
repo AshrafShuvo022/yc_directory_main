@@ -8,6 +8,7 @@ import Image from 'next/image';
 import markdownit from 'markdown-it'
 import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import View from '@/components/View';
 const md = markdownit()
 export const experimental_ppr = true;
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
@@ -53,7 +54,8 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
       <hr className="divider"/>
       <Suspense fallback = {<Skeleton className = "view_skeleton"/>}>
       <div className="view_skeleton"></div>
-      <Suspense/>
+      <View id={id}/>
+      </Suspense>
     </section>
 
   </>;
