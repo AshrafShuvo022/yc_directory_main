@@ -25,11 +25,11 @@ export default async function Home({searchParams}: {searchParams: Promise<{query
         </p>
         <SearchForm query={query} /> 
       </section>
-      <section className="selection_container">
+      <section className="selection_container mx-auto max-w-7xl">
          <p className="text-30-semibold ">
            {query ? `Search results for "${query}"` : 'All Startups'}
          </p>
-         <ul className="mt-7 card_grid">
+         <ul className="m-7 max card_grid">
           {
             posts?.length > 0 ? (
               posts.map((post: StartupTypeCard, index: number) => (

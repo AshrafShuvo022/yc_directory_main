@@ -66,55 +66,55 @@
   }
 
   .text-30-extrabold {
-    @apply text-[30px] font-extrabold text-white;
+    @apply text-[30px] font-extrabold text-slate-900;
   }
 
   .text-30-bold {
-    @apply text-[30px] font-bold text-black;
+    @apply text-[30px] font-bold text-slate-900;
   }
 
   .text-30-semibold {
-    @apply font-semibold text-[30px] text-black;
+    @apply font-semibold text-[30px] text-slate-800;
   }
 
   .text-26-semibold {
-    @apply font-semibold text-[26px] text-black;
+    @apply font-semibold text-[26px] text-slate-800;
   }
 
   .text-24-black {
-    @apply text-[24px] font-black text-black;
+    @apply text-[24px] font-black text-slate-900;
   }
 
   .text-20-medium {
-    @apply font-medium text-[20px] text-black;
+    @apply font-medium text-[20px] text-slate-700;
   }
 
   .text-16-medium {
-    @apply font-medium text-[16px] text-black;
+    @apply font-medium text-[16px] text-slate-700;
   }
 
   .text-14-normal {
-    @apply font-normal text-sm text-white-100/80;
+    @apply font-normal text-sm text-slate-500;
   }
 
   .pink_container {
-    @apply w-full bg-primary min-h-[530px] pattern flex justify-center items-center flex-col py-10 px-6;
+    @apply w-full bg-gradient-to-br from-violet-700 via-purple-700 to-indigo-800 min-h-[530px] pattern flex justify-center items-center flex-col py-10 px-6;
   }
 
   .tag {
-    @apply bg-secondary px-6 py-3 font-work-sans font-bold rounded-sm uppercase relative tag-tri;
+    @apply bg-gradient-to-r from-violet-100 to-purple-100 text-violet-800 px-6 py-3 font-work-sans font-bold rounded-lg uppercase relative border border-violet-200;
   }
 
   .heading {
-    @apply uppercase bg-black px-6 py-3 font-work-sans font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+    @apply uppercase bg-gradient-to-r from-slate-900 to-slate-700 px-8 py-4 font-work-sans font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5 rounded-2xl shadow-2xl;
   }
 
   .sub-heading {
-    @apply font-medium text-[20px] text-white max-w-2xl text-center break-words;
+    @apply font-medium text-[20px] text-black max-w-2xl text-center break-words;
   }
 
   .section_container {
-    @apply px-6 py-10 max-w-7xl mx-auto;
+    @apply px-6 py-10 max-w-7xl mx-auto bg-white/60 backdrop-blur-sm rounded-2xl shadow-sm border border-slate-200/30;
   }
 
   .card_grid {
@@ -126,33 +126,33 @@
   }
 
   .no-result {
-    @apply text-black-100 text-sm font-normal;
+    @apply text-slate-500 text-sm font-normal;
   }
 
   /* profile */
   .profile_container {
-    @apply w-full pb-10 pt-20 px-6 max-w-7xl mx-auto lg:flex-row flex-col flex gap-10;
+    @apply w-full pb-10 pt-20 px-6 max-w-7xl mx-auto lg:flex-row flex-col flex gap-10 bg-white/60 backdrop-blur-sm rounded-2xl shadow-sm border border-slate-200/30;
   }
 
   .profile_card {
-    @apply w-80 px-6 pb-6 pt-20 flex flex-col justify-center items-center bg-primary border-[5px] border-black shadow-100 rounded-[30px] relative z-0 h-fit max-lg:w-full;
+    @apply w-80 px-6 pb-6 pt-20 flex flex-col justify-center items-center bg-gradient-to-br from-violet-50 to-purple-50 border-2 border-violet-200 shadow-xl rounded-3xl relative z-0 h-fit max-lg:w-full;
   }
 
   .profile_title {
-    @apply w-11/12 bg-white border-[5px] border-black rounded-[20px] px-5 py-3 absolute -top-9 after:absolute after:content-[''] after:-top-1 after:right-0 after:-skew-y-6 after:bg-black after:-z-[1] after:rounded-[20px] after:w-full after:h-[60px] before:absolute before:content-[''] before:-bottom-1 before:left-0  before:-skew-y-6 before:w-full before:h-[60px] before:bg-black  before:-z-[1] before:rounded-[20px] shadow-100;
+    @apply w-11/12 bg-white border-2 border-violet-200 rounded-2xl px-5 py-3 absolute -top-9 shadow-lg;
   }
 
   .profile_image {
-    @apply rounded-full object-cover border-[3px] border-black;
+    @apply rounded-full object-cover border-2 border-violet-300 shadow-lg;
   }
 
   /* idea details */
   .divider {
-    @apply border-dotted bg-zinc-400 max-w-4xl my-10 mx-auto;
+    @apply border-dotted border-slate-300 max-w-4xl my-10 mx-auto;
   }
 
   .view_skeleton {
-    @apply bg-zinc-400 h-10 w-24 rounded-lg fixed bottom-3 right-3;
+    @apply bg-gradient-to-r from-slate-200 to-slate-300 h-10 w-24 rounded-lg fixed bottom-3 right-3;
   }
 
   /* navbar */
@@ -161,78 +161,78 @@
   }
 
   .dropdown-menu {
-    @apply w-56 border-[5px] border-black bg-white p-5 rounded-2xl !important;
+    @apply w-56 border border-slate-200 bg-white p-5 rounded-2xl shadow-xl !important;
   }
 
   .login {
-    @apply border-[5px] py-4 border-black bg-white text-black relative shadow-100 font-work-sans font-medium hover:shadow-none transition-all duration-500 !important;
+    @apply border-2 py-4 border-slate-300 bg-white text-slate-700 relative shadow-lg font-work-sans font-medium hover:shadow-xl hover:border-violet-300 transition-all duration-300 !important;
   }
 
   /* searchform */
   .search-form {
-    @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-black rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
+    @apply max-w-3xl w-full min-h-[80px] bg-white border-2 border-slate-200 rounded-full text-[24px] mt-8 px-6 flex flex-row items-center gap-5 shadow-lg hover:shadow-xl transition-all duration-300;
   }
 
   .search-input {
-    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black-100 w-full h-auto outline-none;
+    @apply flex-1 font-semibold placeholder:font-medium placeholder:text-slate-400 w-full h-auto outline-none text-slate-700;
   }
 
   .search-btn {
-    @apply size-[50px] rounded-full bg-black flex justify-center items-center !important;
+    @apply size-[50px] rounded-full bg-gradient-to-r from-violet-600 to-purple-600 flex justify-center items-center shadow-lg hover:shadow-xl transition-all duration-300 !important;
   }
 
   /* startupcard */
   .startup-card {
-    @apply bg-white border-[5px] border-black py-6 px-5 rounded-[22px] shadow-200 hover:border-primary transition-all duration-500 hover:shadow-300 hover:bg-primary-100;
+    @apply bg-white border border-slate-200 py-6 px-5 rounded-2xl shadow-lg hover:border-violet-300 transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-violet-50 hover:to-purple-50;
   }
 
   .startup-card_date {
-    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full group-hover:bg-white-100;
+    @apply font-medium text-[16px] bg-gradient-to-r from-violet-100 to-purple-100 text-violet-800 px-4 py-2 rounded-full group-hover:bg-white group-hover:shadow-md;
   }
 
   .startup-card_desc {
-    @apply font-normal text-[16px] line-clamp-2 my-3 text-black-100 break-all;
+    @apply font-normal text-[16px] line-clamp-2 my-3 text-slate-600 break-all;
   }
 
   .startup-card_img {
-    @apply w-full h-[164px] rounded-[10px] object-cover;
+    @apply w-full h-[164px] rounded-xl object-cover shadow-md;
   }
 
   .startup-card_btn {
-    @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3 !important;
+    @apply rounded-full bg-gradient-to-r from-violet-600 to-purple-600 font-medium text-[16px] text-white px-5 py-3 shadow-lg hover:shadow-xl transition-all duration-300 !important;
   }
 
   .startup-card_skeleton {
-    @apply w-full h-96 rounded-[22px] bg-zinc-400;
+    @apply w-full h-96 rounded-2xl bg-gradient-to-r from-slate-200 to-slate-300;
   }
 
   /* startupform */
   .startup-form {
-    @apply max-w-2xl mx-auto bg-white my-10 space-y-8 px-6;
+    @apply max-w-2xl mx-auto bg-white/80 backdrop-blur-sm my-10 space-y-8 px-6 rounded-2xl shadow-lg border border-slate-200/50;
   }
 
   .startup-form_label {
-    @apply font-bold text-[18px] text-black uppercase;
+    @apply font-bold text-[18px] text-slate-800 uppercase;
   }
 
   .startup-form_input {
-    @apply border-[3px] border-black px-5 py-7 text-[18px] text-black font-semibold rounded-full mt-3 placeholder:text-black-300 !important;
+    @apply border-2 border-slate-300 px-5 py-7 text-[18px] text-slate-700 font-semibold rounded-full mt-3 placeholder:text-slate-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 transition-all duration-300 !important;
   }
 
   .startup-form_textarea {
-    @apply border-[3px] border-black p-5 text-[18px] text-black font-semibold rounded-[20px] mt-3 placeholder:text-black-300 !important;
+    @apply border-2 border-slate-300 p-5 text-[18px] text-slate-700 font-semibold rounded-2xl mt-3 placeholder:text-slate-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 transition-all duration-300 !important;
   }
 
   .startup-form_error {
-    @apply text-red-500 mt-2 ml-5;
+    @apply text-red-500 mt-2 ml-5 font-medium;
   }
 
   .startup-form_editor {
-    @apply mt-3 border-[3px] border-black text-[18px] text-black font-semibold placeholder:text-black-300 !important;
+    @apply mt-3 border-2 border-slate-300 text-[18px] text-slate-700 font-semibold placeholder:text-slate-400 focus:border-violet-500 focus:ring-2 focus:ring-violet-200 transition-all duration-300 !important;
   }
 
   .startup-form_btn {
-    @apply bg-primary border-[4px] border-black rounded-full p-5 min-h-[70px] w-full font-bold text-[18px] !important;
+    @apply bg-gradient-to-r from-violet-600 to-purple-600 border-2 border-violet-600 rounded-full p-5 min-h-[70px] w-full font-bold text-[18px] text-white shadow-lg hover:shadow-xl hover:from-violet-700 hover:to-purple-700 transition-all duration-300 !important;
   }
 
   /* view */
@@ -241,19 +241,19 @@
   }
 
   .view-text {
-    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-lg capitalize;
+    @apply font-medium text-[16px] bg-gradient-to-r from-violet-100 to-purple-100 text-violet-800 px-4 py-2 rounded-lg capitalize shadow-md;
   }
 
   .category-tag {
-    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full;
+    @apply font-medium text-[16px] bg-gradient-to-r from-violet-100 to-purple-100 text-violet-800 px-4 py-2 rounded-full shadow-md;
   }
 
   .pattern {
     background-image: linear-gradient(
             to right,
             transparent 49.5%,
-            rgba(251, 232, 67, 0.2) 49.5%,
-            rgba(251, 232, 67, 0.6) 50.5%,
+            rgba(139, 92, 246, 0.1) 49.5%,
+            rgba(139, 92, 246, 0.3) 50.5%,
             transparent 50.5%
     );
     background-size: 5% 100%;
@@ -262,7 +262,7 @@
   }
 
   .tag-tri {
-    @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
+    @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-violet-300 before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-violet-300 after:border-l-[10px] after:border-l-transparent;
   }
 }
 
@@ -276,7 +276,16 @@
   * {
     @apply border-border;
   }
+  
+  html, body {
+    @apply bg-gradient-to-br from-blue-50 via-violet-100 to-purple-200 min-h-screen;
+  }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+  }
+  
+  #__next {
+    @apply bg-gradient-to-br from-blue-50 via-violet-100 to-purple-200 min-h-screen;
   }
 }

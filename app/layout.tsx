@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={workSans.variable}
+        className={`${workSans.variable} bg-gradient-to-br from-blue-50 via-violet-100 to-purple-200 min-h-screen`}
       >
         {children}
         <Toaster/>
