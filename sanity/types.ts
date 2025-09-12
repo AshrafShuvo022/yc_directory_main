@@ -26,7 +26,7 @@ export type Playlist = {
     _type: "reference";
     _weak?: boolean;
     _key: string;
-    [internalGroqTypeReferenceTo]?: "startup";
+    [internalGroqTypeReferenceTo]?: "playlist";
   }>;
 };
 
